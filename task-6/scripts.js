@@ -2,8 +2,8 @@ var randomNumber = parseInt(Math.random() * 100);
 
 
 while (inputNumber !== randomNumber) {
-	var inputNumber = prompt("Guess the number. type it here:");
-	if (inputNumber !== null) {
+	var inputNumber = prompt("Guess the number from 0 to 100. Type it here:");
+	if (inputNumber.search(/[0-9]/i) !== -1 && inputNumber !== null) {
 		if (inputNumber > randomNumber) {
 		alert("Our number is lower, try again.");
 		}
